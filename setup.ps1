@@ -1,7 +1,7 @@
 @(
   "database",
   "s3"
-  # "redis"
+  "redis"
 ) | % {
   $script = "$PSScriptRoot/$_/setup.ps1";
   & $script
